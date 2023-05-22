@@ -1,0 +1,121 @@
+{
+  // editor
+  "editor.fontSize": 18,
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "normal",
+  "editor.minimap.enabled": false,
+  "editor.wordWrapColumn": 50,
+  "editor.wordWrap": "on",
+  "editor.wrappingStrategy": "advanced",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.inlineSuggest.enabled": true,
+  "workbench.colorTheme": "Andromeda",
+  "editor.fontFamily": "FiraCode NF",
+  "editor.indentSize": "tabSize",
+  "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+
+  "liveServer.settings.host": "5.1.1.2",
+
+  // cursor
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "expand",
+
+  // code formatting
+  // default formatter
+  "editor.defaultFormatter": "HookyQR.beautify",
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+
+  // html
+  "[html]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+
+  // Javascript and react
+
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "eslint.alwaysShowStatus": true,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.tslint": true,
+    "source.organizeImports": true
+  },
+  
+  // python
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "ms-python.python"
+  },
+
+  // code snippet
+  "files.associations": {
+    "**/templates/*.html": "django-html",
+    "**/templates/*": "django-txt",
+    "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "django-html": "html"
+  },
+  "emmet.showSuggestionsAsSnippets": true,
+  "auto-close-tag.activationOnLanguage": [
+
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (EEx)",
+    "HTML (Eex)",
+    "plist",
+    "django-html"
+  ],
+
+  "auto-close-tag.disableOnLanguage": [],
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+
+  "remote.SSH.remotePlatform": {
+    "115.245.192.138": "linux",
+    "112.245.192.138": "linux",
+    "subtitle": "linux",
+    "mnf": "linux"
+  },
+
+  "editor.accessibilitySupport": "off",
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.autofetch": true,
+  "chatgpt.gpt3.apiKey": "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"
+}
