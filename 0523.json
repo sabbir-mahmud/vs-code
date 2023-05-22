@@ -117,5 +117,4 @@
   "editor.accessibilitySupport": "off",
   "security.workspace.trust.untrustedFiles": "open",
   "git.autofetch": true,
-  "chatgpt.gpt3.apiKey": "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"
 }
