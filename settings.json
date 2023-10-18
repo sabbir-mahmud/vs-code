@@ -1,136 +1,144 @@
 {
-  // editor
-  "editor.fontSize": 18,
-  "editor.fontLigatures": true,
-  "editor.fontWeight": "normal",
-  "editor.minimap.enabled": false,
-  "editor.wordWrapColumn": 40,
-  "editor.wordWrap": "on",
-  "editor.wrappingStrategy": "advanced",
-  "liveServer.settings.donotShowInfoMsg": true,
-  "editor.inlineSuggest.enabled": true,
-  "workbench.colorTheme": "Andromeda",
-  "editor.fontFamily": "FiraCode NF",
-  "editor.indentSize": "tabSize",
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": "comment",
-        "settings": {
-          "fontStyle": "italic"
-        }
-      }
-    ]
-  },
+	// Editor Settings
+	"editor.fontSize": 17,
+	"editor.fontLigatures": true,
+	"editor.fontWeight": "normal",
+	"editor.minimap.enabled": false,
+	"editor.wordWrapColumn": 50,
+	"editor.wordWrap": "on",
+	"editor.wrappingStrategy": "advanced",
+	"liveServer.settings.donotShowInfoMsg": true,
+	"editor.inlineSuggest.enabled": true,
+	"workbench.colorTheme": "Andromeda",
+	"editor.fontFamily": "FiraCode NF",
+	"editor.indentSize": "tabSize",
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": "comment",
+				"settings": {
+				"fontStyle": "italic"
+				}
+			}
+		]
+	},
+	// Cursor Settings
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.cursorBlinking": "expand",
 
-  "liveServer.settings.host": "5.1.1.2",
+	// Code Formatting
+	"editor.defaultFormatter": "HookyQR.beautify",
+	"editor.formatOnSave": true,
+	"files.autoSave": "onFocusChange",
 
-  // cursor
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.cursorBlinking": "expand",
+	// pettier settings
+	"prettier.tabWidth": 4,
+	
 
-  // code formatting
-  // default formatter
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "files.autoSave": "onFocusChange",
+	// HTML
+	"[html]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "HookyQR.beautify"
+	},
 
-  // Javascript and react
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": false
-  },
+	// JavaScript, typescript and React
+	"[javascript]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascriptreact]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescriptreact]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
 
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.tslint": true,
-    "source.organizeImports": true
-  },
-  "eslint.alwaysShowStatus": true,
+	"eslint.alwaysShowStatus": true,
 
-  // python
-  "[python]": {
-    "editor.formatOnType": true
-  },
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
+		"source.fixAll.tslint": true,
+		"source.organizeImports": true
+	},
 
-  // code snippet
-  "files.associations": {
-    "**/templates/*.html": "django-html",
-    "**/templates/*": "django-txt",
-    "**/requirements{/**,*}.{txt,in}": "pip-requirements"
-  },
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "typescript": "typescriptreact",
-    "django-html": "html"
-  },
-  "emmet.showSuggestionsAsSnippets": true,
-  "auto-close-tag.activationOnLanguage": [
-    "xml",
-    "php",
-    "blade",
-    "ejs",
-    "jinja",
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "plaintext",
-    "markdown",
-    "vue",
-    "liquid",
-    "erb",
-    "lang-cfml",
-    "cfml",
-    "HTML (EEx)",
-    "HTML (Eex)",
-    "plist",
-    "django-html"
-  ],
+	// Python
+	"[python]": {
+		"editor.formatOnType": true,
+		"editor.defaultFormatter": "ms-python.python",
+		"python.analysis.autoImportCompletions": true,
+		"python.analysis.autoImportUserSymbols": true,
+		"python.analysis.indexing": true
+	},
 
-  "auto-close-tag.disableOnLanguage": [],
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.startupEditor": "none",
+	// Code Snippet Settings
+	"files.associations": {
+		"**/templates/*.html": "django-html",
+		"**/templates/*": "django-txt",
+		"**/requirements{/**,*}.{txt,in}": "pip-requirements"
+	},
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact",
+		"typescript": "typescriptreact",
+		"django-html": "html"
+	},
+	"emmet.showSuggestionsAsSnippets": true,
 
-  "remote.SSH.remotePlatform": {
-    "115.245.192.138": "linux",
-    "112.245.192.138": "linux",
-    "subtitle": "linux",
-    "mnf": "linux"
-  },
+	"auto-close-tag.disableOnLanguage": [],
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.startupEditor": "none",
 
-  "editor.accessibilitySupport": "off",
-  "security.workspace.trust.untrustedFiles": "open",
-  "git.autofetch": true,
-
-  //terminal
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.fontWeight": "normal",
-  "terminal.integrated.fontFamily": "Fira Code, Operator Mono",
-
-  // terminal customization
-  "workbench.colorCustomizations": {
-    "terminal.background": "#1D2021",
-    "terminal.foreground": "#A89984",
-    "terminalCursor.background": "#A89984",
-    "terminalCursor.foreground": "#A89984",
-    "terminal.ansiBlack": "#1D2021",
-    "terminal.ansiBlue": "#0D6678",
-    "terminal.ansiBrightBlack": "#665C54",
-    "terminal.ansiBrightBlue": "#0D6678",
-    "terminal.ansiBrightCyan": "#8BA59B",
-    "terminal.ansiBrightGreen": "#95C085",
-    "terminal.ansiBrightMagenta": "#8F4673",
-    "terminal.ansiBrightRed": "#FB543F",
-    "terminal.ansiBrightWhite": "#FDF4C1",
-    "terminal.ansiBrightYellow": "#FAC03B",
-    "terminal.ansiCyan": "#8BA59B",
-    "terminal.ansiGreen": "#95C085",
-    "terminal.ansiMagenta": "#8F4673",
-    "terminal.ansiRed": "#FB543F",
-    "terminal.ansiWhite": "#A89984",
-    "terminal.ansiYellow": "#FAC03B"
-  }
+	// Accessibility and Security
+	"editor.accessibilitySupport": "off",
+	"security.workspace.trust.untrustedFiles": "open",
+	"git.autofetch": true,
+	"chatgpt.gpt3.apiKey": "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",
+	"auto-close-tag.excludedTags": [
+		"area",
+		"base",
+		"br",
+		"col",
+		"command",
+		"embed",
+		"hr",
+		"img",
+		"input",
+		"keygen",
+		"link",
+		"meta",
+		"param",
+		"source",
+		"track",
+		"wbr"
+	],
+	"tabnine.experimentalAutoImports": true,
+	"explorer.confirmDelete": false,
+	"git.openRepositoryInParentFolders": "never",
+	"auto-close-tag.activationOnLanguage": [
+		"xml",
+		"php",
+		"blade",
+		"ejs",
+		"jinja",
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"plaintext",
+		"markdown",
+		"vue",
+		"liquid",
+		"erb",
+		"lang-cfml",
+		"cfml",
+		"HTML (EEx)",
+		"HTML (Eex)",
+		"plist"
+	],
+  
 }
